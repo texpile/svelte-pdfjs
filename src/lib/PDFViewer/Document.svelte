@@ -11,6 +11,7 @@ children Page components through the context API.
 	} from 'pdfjs-dist/types/src/display/api.js';
 	import { createEventDispatcher, getContext, onDestroy, setContext } from 'svelte';
 	import { writable } from 'svelte/store';
+	const { getDocument } = await import('pdfjs-dist/legacy/build/pdf.mjs');
 </script>
 
 <script lang="ts">
@@ -51,7 +52,7 @@ children Page components through the context API.
 
 		current_doc.set(null);
 
-		const { getDocument } = await import('pdfjs-dist');
+		const { getDocument } = await import('pdfjs-dist/legacy/build/pdf.mjs');
 		loading_task = getDocument({ url: file, worker, ...loadOptions });
 		loading_task.onProgress = onProgress!;
 		loading_task.promise
