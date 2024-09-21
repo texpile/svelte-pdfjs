@@ -1,6 +1,6 @@
 {
 	"name": "@texpile/svelte-pdfjs",
-	"version": "0.9.1",
+	"version": "0.9.2",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
@@ -31,10 +31,6 @@
 			"svelte": "./dist/index.js",
 			"import": "./dist/index.js",
 			"types": "./dist/index.d.ts"
-		},
-		"./vite": {
-			"import": "./dist/utils/vite.js",
-			"types": "./dist/utils/vite.d.ts"
 		}
 	},
 	"engines": {

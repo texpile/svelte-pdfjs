@@ -1,2 +1,2 @@
-/// <reference types="@sveltejs/kit" />
-/// <reference types="vite" />
+// / <reference types="@sveltejs/kit" />
+// / <reference types="vite" />
